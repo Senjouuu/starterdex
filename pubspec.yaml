@@ -1,0 +1,219 @@
+name: pokedex_app
+description: A Pokedex app built with Flutter
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.13.3
+  provider: ^6.0.0  # Add this line for the provider package
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/images/bulbasaur.png
+    - assets/images/ivysaur.png
+
+
+    - assets/images/venusaur.png
+    - assets/images/charmander.png
+    - assets/images/charmeleon.png
+    - assets/images/charizard.png
+    - assets/images/squirtle.png
+    - assets/images/wartortle.png
+    - assets/images/blastoise.png
+    - assets/images/chikorita.png
+    - assets/images/bayleef.png
+    - assets/images/meganium.png
+    - assets/images/cyndaquil.png
+    - assets/images/quilava.png
+    - assets/images/typhlosion.png
+    - assets/images/totodile.png
+    - assets/images/croconaw.png
+    - assets/images/feraligatr.png
+    - assets/images/treecko.png
+    - assets/images/grovyle.png
+    - assets/images/sceptile.png
+    - assets/images/torchic.png
+    - assets/images/combusken.png
+    - assets/images/blaziken.png
+    - assets/images/mudkip.png
+    - assets/images/marshtomp.png
+    - assets/images/swampert.png
+    - assets/images/turtwig.png
+    - assets/images/grotle.png
+    - assets/images/torterra.png
+    - assets/images/chimchar.png
+    - assets/images/monferno.png
+    - assets/images/infernape.png
+    - assets/images/piplup.png
+    - assets/images/prinplup.png
+    - assets/images/empoleon.png
+    - assets/images/snivy.png
+    - assets/images/servine.png
+    - assets/images/serperior.png
+    - assets/images/tepig.png
+    - assets/images/pignite.png
+    - assets/images/emboar.png
+    - assets/images/oshawott.png
+    - assets/images/dewott.png
+    - assets/images/samurott.png
+    - assets/images/chespin.png
+    - assets/images/quilladin.png
+    - assets/images/chesnaught.png
+    - assets/images/fennekin.png
+    - assets/images/braixen.png
+    - assets/images/delphox.png
+    - assets/images/froakie.png
+    - assets/images/frogadier.png
+    - assets/images/greninja.png
+    - assets/images/rowlet.png
+    - assets/images/dartrix.png
+    - assets/images/decidueye.png
+    - assets/images/litten.png
+    - assets/images/torracat.png
+    - assets/images/incineroar.png
+    - assets/images/popplio.png
+    - assets/images/brionne.png
+    - assets/images/primarina.png
+    - assets/images/grookey.png
+    - assets/images/thwackey.png
+    - assets/images/rillaboom.png
+    - assets/images/scorbunny.png
+    - assets/images/raboot.png
+    - assets/images/cinderace.png
+    - assets/images/sobble.png
+    - assets/images/drizzile.png
+    - assets/images/inteleon.png
+    - assets/images/sprigatito.png
+    - assets/images/floragato.png
+    - assets/images/meowscarada.png
+    - assets/images/fuecoco.png
+    - assets/images/crocalor.png
+    - assets/images/skeledirge.png
+    - assets/images/quaxly.png
+    - assets/images/quaxwell.png
+    - assets/images/quaquaval.png
+
+    - assets/images/venusaur_sprite.jpg
+    - assets/images/charizard_sprite.jpg
+    - assets/images/blastoise_sprite.jpg
+    - assets/images/meganium_sprite.jpg
+    - assets/images/typhlosion_sprite.jpg
+    - assets/images/feraligatr_sprite.jpg
+    - assets/images/sceptile_sprite.jpg
+    - assets/images/blaziken_sprite.jpg
+    - assets/images/swampert_sprite.jpg
+    - assets/images/torterra_sprite.jpg
+    - assets/images/infernape_sprite.jpg
+    - assets/images/empoleon_sprite.jpg
+    - assets/images/serperior_sprite.jpg
+    - assets/images/emboar_sprite.jpg
+    - assets/images/samurott_sprite.jpg
+    - assets/images/chesnaught_sprite.jpg
+    - assets/images/delphox_sprite.jpg
+    - assets/images/greninja_sprite.jpg
+    - assets/images/decidueye_sprite.jpg
+    - assets/images/incineroar_sprite.jpg
+    - assets/images/primarina_sprite.jpg
+    - assets/images/rillaboom_sprite.jpg
+    - assets/images/cinderace_sprite.jpg
+    - assets/images/inteleon_sprite.jpg
+    - assets/images/meowscarada_sprite.jpg
+    - assets/images/skeledirge_sprite.jpg
+    - assets/images/quaquaval_sprite.jpg
+    - assets/images/kommo-o.png
+    - assets/images/pawmot.png
+    - assets/images/gogoat.png
+    - assets/images/avalugg.png
+    - assets/images/veluza.png
+    - assets/images/espathra.png
+    - assets/images/kingambit.png
+    - assets/images/glimmora.png
+    - assets/images/aegislash.png
+    - assets/images/mrrime.png
+    - assets/images/dragapult.png
+    - assets/images/charizard_gmax.png
+    - assets/images/vaporeon.png
+    - assets/images/tauros.png
+    - assets/images/crabominable.png
+    - assets/images/noivern.png
+    - assets/images/raichu.png
+    - assets/images/magnezone.png
+    - assets/images/ninetales.png
+    - assets/images/braviary.png
+    - assets/images/lycanroc.png
+    - assets/images/hawlucha.png
+    - assets/images/gourgeist.png
+    - assets/images/tyrantrum.png
+    - assets/images/aurorus.png
+    - assets/images/goodra.png
+    - assets/images/gardevoir_mega.png
+    - assets/images/archeops.png
+    - assets/images/hydreigon.png
+    - assets/images/haxorus.png
+    - assets/images/vanilluxe.png
+    - assets/images/druddigon.png
+    - assets/images/accelgor.png
+    - assets/images/escavalier.png
+    - assets/images/bouffalant.png
+    - assets/images/volcarona.png
+    - assets/images/roserade.png
+    - assets/images/spiritomb.png
+    - assets/images/togekiss.png
+    - assets/images/lucario.png
+    - assets/images/garchomp.png
+    - assets/images/whiscash.png
+    - assets/images/tentacruel.png
+    - assets/images/ludicolo.png
+    - assets/images/wailord.png
+    - assets/images/milotic.png
+    - assets/images/claydol.png
+    - assets/images/cradily.png
+    - assets/images/armaldo.png
+    - assets/images/aggron.png
+    - assets/images/skarmory.png
+    - assets/images/metagross_mega.png
+    - assets/images/lapras.png
+    - assets/images/snorlax.png
+    - assets/images/pikachu.png
+    - assets/images/gyarados.png
+    - assets/images/aerodactyl.png
+    - assets/images/dragonite.png
+    - assets/images/exeggutor.png
+    - assets/images/pidgeot.png
+    - assets/images/alakazam.png
+    - assets/images/rhydon.png
+    - assets/images/arcanine.png
+
+
+    - assets/images/blue.jpg
+    - assets/images/lance.jpg
+    - assets/images/red.jpg
+    - assets/images/steven.jpg
+    - assets/images/wallace.jpg
+    - assets/images/cynthia.jpg
+    - assets/images/alder.jpg
+    - assets/images/iris.jpg
+    - assets/images/diantha.jpg
+    - assets/images/kukui.jpg
+    - assets/images/hau.jpg
+    - assets/images/leon.jpg
+    - assets/images/geeta.jpg
+    - assets/images/nemona.jpg
+
+
+
+
+
