@@ -146,31 +146,35 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
       body: _children[_currentIndex],
-      bottomNavigationBar: BottomNavigationBar(
-        onTap: onTabTapped,
-        currentIndex: _currentIndex,
-        backgroundColor: isDarkMode ? Colors.black : const Color.fromARGB(169, 255, 255, 255),
-        selectedItemColor: isDarkMode ? Colors.white : Color.fromARGB(255, 7, 33, 71),
-        unselectedItemColor: isDarkMode ? Colors.white70 : Color(0xFF38598C),
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.list),
-            label: 'Pokedex',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.flash_on),
-            label: 'Moves',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.opacity),
-            label: 'Type Effects',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.people),
-            label: 'Champions',
-          ),
-        ],
-      ),
+bottomNavigationBar: BottomNavigationBar(
+  onTap: onTabTapped,
+  currentIndex: _currentIndex,
+  backgroundColor: Color(0xFF38598C),
+  selectedItemColor: Colors.white,
+  unselectedItemColor: Colors.white70,
+  type: BottomNavigationBarType.fixed,
+  showUnselectedLabels: false, // 👈 hides labels for unselected items
+  showSelectedLabels: true,    // 👈 optional, usually true by default
+  items: [
+    BottomNavigationBarItem(
+      icon: Icon(Icons.list),
+      label: 'Pokedex',
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.flash_on),
+      label: 'Moves',
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.opacity),
+      label: 'Type Effects',
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.people),
+      label: 'Champions',
+    ),
+  ],
+),
+
     );
   }
 }
@@ -189,3 +193,4 @@ class ThemeNotifier with ChangeNotifier {
     notifyListeners();
   }
 }
+
