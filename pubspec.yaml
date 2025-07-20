@@ -213,6 +213,10 @@ flutter:
     - assets/images/geeta.jpg
     - assets/images/nemona.jpg
 
+    - assets/moves.json
+
+
+
 
 
 
